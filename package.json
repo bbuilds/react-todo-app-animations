@@ -1,0 +1,21 @@
+{
+  "name": "todo-app",
+  "version": "0.1.0",
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-motion": "^0.5.1",
+    "react-scripts": "1.0.10",
+    "react-transition-group": "^2.2.0"
+  },
+  "author": "Branden Builds",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "uuid": "^3.1.0"
+  }
+}

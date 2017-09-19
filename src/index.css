@@ -1,0 +1,100 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #1D4350;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+}
+
+
+.container {
+	width: 50%;
+	margin: auto;
+}
+
+.todo-heading {
+    color: whitesmoke;
+    margin-bottom: 0;
+}
+
+.todo-list {
+    list-style: none;
+    margin-top: 0.5em;
+    padding: 0;
+}
+
+.todo-list__item {
+    background: rebeccapurple;
+    color: white;
+    margin-bottom: 1px;
+    padding: 1em 2em;
+    position: relative;
+}
+
+.todo-list__checkbox {
+    background: yellow;
+    border: 0;
+    width: 18px;
+    height: 18px;
+    float: right;
+    cursor: pointer;
+}
+
+.todo-list__checkbox:hover {
+    background: white;
+}
+
+
+.todo-controls {
+    text-align: center;
+}
+
+.todo-controls__input {
+    border: 0;
+    font-size: 18px;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.todo-controls__button {
+    background: rebeccapurple;
+    border: 0;
+    color: white;
+    font-size: 18px;
+    margin: 0.5em 2em;
+    padding: 0.5em 1em;
+    transition: all .3s;
+}
+
+.todo-controls__button:hover {
+    background: palevioletred;
+    cursor: pointer;
+}
+
+
+
+/*Animation Styles for React Transition*/
+
+.new-todo-enter {
+    opacity: 0;
+}
+
+.new-todo-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.new-todo-exit {
+    opacity: 1;
+}
+
+.new-todo-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-out;
+}
